@@ -1,0 +1,121 @@
+.message_container {
+    user-select: none;
+    float: right;
+    width: calc(100% - 250px);
+    height: calc(100% - 30px);
+    overflow-y: hidden;
+}
+
+.messages_container {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+}
+
+.messages_container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messages_container::-webkit-scrollbar-thumb {
+    background: #11111300;
+    border-radius: 5px;
+    transition: all 0.1s ease 0s;
+}
+
+.messages_container:hover::-webkit-scrollbar-thumb {
+    background: #141416;
+    border-radius: 5px;
+}
+
+.message {
+    width: 100%;
+}
+
+.message:hover {
+    background-color: #1c1c2063;
+}
+
+.message img {
+    margin-top: 4px;
+    margin-left: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.message p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.message p#username {
+    user-select: text;
+    margin-left: 70px;
+    margin-top: -50px;
+    font-weight: 500;
+}
+
+.message p#message {
+    user-select: text;
+    padding-bottom: 4px;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+
+.message_send_container input {
+    outline: none;
+    border: none;
+    border: 1px solid #7c7c7c;
+    width: calc(100vw - 300px);
+    padding-left: 9px;
+    padding-right: 9px;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 7px;
+    background-color: #00000000;
+    color: #ffffff;
+    transition: all 0.1s ease 0s;
+}
+
+.message_send_container input:hover {
+    border-color: #00ccff;
+}
+
+.message_send_container input:focus {
+    border-color: #00ccff;
+}
+
+.message_send_button {
+    position: absolute;
+    user-select: none;
+    display: flex;
+    float: right;
+    height: 15px;
+    width: 15px;
+    padding: 7px;
+    right: 20px;
+    margin-top: -34px;
+    border-radius: 50%;
+    background-color: #ffffff00;
+    transition: all 0.1s ease 0s;
+}
+
+.message_send_button:hover {
+    background-color: #ffffff21;
+    cursor: pointer;
+}
+
+.message_send_button:active {
+    background-color: #ffffff3a;
+}
+
+.message_send_button img {
+    user-select: none;
+    height: 15px;
+    width: 15px;
+    filter: invert(50%);
+    background-color: #ffffff00;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/topbar.css">
+    <link rel="stylesheet" type="text/css" href="../style/home.css">
+    <link rel="stylesheet" type="text/css" href="../style/contact_list.css">
+    <link rel="stylesheet" type="text/css" href="../style/local_user_profile.css">
+    <link rel="stylesheet" type="text/css" href="../style/messages.css">
+    <title>Home - Instant Messenger</title>
+</head>
+<body>
+    <div class="topbar">
+        <p id="title">Instant Messenger</p>
+        <div id="app_close_button"><img src="../svg/close-outline.svg" draggable="false"></div>
+        <div id="app_maximise_button"><img src="../svg/resize-outline.svg" draggable="false"></div>
+        <div id="app_minimise_button"><img src="../svg/remove-outline.svg" draggable="false"></div>
+    </div>
+    <div class="contacts_list">
+        <div class="contact_list_profile_item">
+            <img id="profileIcon" src="https://static.123game.dev/instant-messenger/images/defaultProfileIcon.png" draggable="false">
+            <p id="username">Test Account</p>
+            <p id="status">Online</p>
+        </div>
+    </div>
+    <div class="local_user_profile">
+        <div id="container">
+            <img id="profileIcon" src="https://cdn.discordapp.com/avatars/621024638641766438/7b6cd448a72771aa7415f1c53fc86f4e.webp?size=80" draggable="false">
+            <p id="username">123 Game</p>
+            <p id="status">Online</p>
+        </div>
+        <div id="buttons">
+            <div id="settings_button"><img src="../svg/settings-outline.svg" draggable="false"></div>
+        </div>
+    </div>
+    <div class="message_container">
+        <div class="messages_container" id="message_container">
+            <div class="message">
+                <img id="profileIcon" src="https://static.123game.dev/instant-messenger/images/defaultProfileIcon.png" draggable="false">
+                <p id="username">Test Account</p>
+                <p id="message">Hello world! super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text super long text </p>
+            </div>
+        </div>
+        <div class="message_send_container">
+            <input id="message_send_input_feild" placeholder="Say something">
+            <div class="message_send_button"><img src="../svg/send.svg" draggable="false"></div>
+        </div>
+    </div>
+    <script defer src="../js/app_functions.js"></script>
+    <script defer src="../js/home_main.js"></script>
+    <script defer src="../js/message_manager.js"></script>
+</body>
+</html>
