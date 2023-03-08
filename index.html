@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Account - Instant Messenger</title>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
+</head>
+<body>
+    <p>Instant Messenger - Test message sender</p>
+    <input id="messageInput" type="text" placeholder="Message">
+    <button id="sendBtn">Send</button>
+</body>
+<script>
+    // Connection
+
+    let socket = io("ws://api.v1.messenger.123game.dev")
+
+    // Messages
+
+    let token = "f1d8100a-a111-48f2-8d6d-d2462d8e5c65"
+    let id = "635abac8a96ecc4f4f174680"
+
+    socket.emit("recivedData", (id))
+
+    document.getElementById("sendBtn").addEventListener("click", () => {
+        socket.emit("sendMessage", ([token, id, "123 Game", document.getElementById("messageInput").value]))
+    })
+</script>
+</html>
