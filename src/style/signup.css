@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+.no-drag {
+    -webkit-app-region: no-drag;
+}
+
+.title {
+    position: relative;
+    background-color: #0f0e0e;
+}
+
+.title p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #edf0f1;
+    background-color: #0f0e0e00;
+    padding-left: 10px;
+}
+
+.logo {
+    background-color: #1a1b1c;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    background-color: #0f0e0e;
+    user-select: none;
+    height: 29px;
+}
+
+.top__bar{
+    background-color: #0f0e0e;
+    height: 29px;
+}
+
+.minimise {
+    background-color: #0f0e0e00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.minimise button {
+    border: none;
+    background-color: #0f0e0e00;
+    width: 10px;
+    height: 10px;
+}
+
+.minimise button ion-icon {
+    -webkit-app-region: no-drag;
+    right: 58px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background-color: #ff000000;
+    color: #ffffff;
+    border: none;
+    transition: all 0.1s ease 0s;
+}
+
+.minimise button ion-icon:hover {
+    background-color: #464646;
+    transition: all 0.1s ease 0s;
+}
+
+.minimise {
+    background-color: #0f0e0e00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.maximise button {
+    border: none;
+    background-color: #0f0e0e00;
+    width: 10px;
+    height: 10px;
+}
+
+.maximise button ion-icon {
+    -webkit-app-region: no-drag;
+    right: 29px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background-color: #0f0e0e;
+    color: #ffffff;
+    border: none;
+    transition: all 0.1s ease 0s;
+}
+
+.maximise button ion-icon:hover {
+    background-color: #464646;
+    transition: all 0.1s ease 0s;
+}
+
+.close {
+    background-color: #0f0e0e00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.close button {
+    border: none;
+    background-color: #0f0e0e00;
+}
+
+.close button ion-icon {
+    -webkit-app-region: no-drag;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background-color: #0f0e0e00;
+    color: #ffffff;
+    border: none;
+    transition: all 0.1s ease 0s;
+}
+
+.close button ion-icon:hover {
+    background-color: #dd2828;
+    transition: all 0.1s ease 0s;
+}
+
+.main {
+    user-select: none;
+    padding-top: 50px;
+    margin: auto;
+    width: 260px;
+	height: 420px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.main p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main input[id="usernameInput"] {
+    color: #ffffff;
+    background-color: #c8d5ff05;
+    border: none;
+    border: 1px solid #7c7c7c;
+    border-radius: 7px;
+    height: 35px;
+    width: 250px;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+    transition: all 0.1s ease 0s;
+}
+
+.main input[id="emailInput"] {
+    color: #ffffff;
+    background-color: #c8d5ff05;
+    border: none;
+    border: 1px solid #7c7c7c;
+    border-radius: 7px;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+    transition: all 0.1s ease 0s;
+}
+
+.main input[id="passwordInput"] {
+    color: #ffffff;
+    background-color: #c8d5ff05;
+    border: none;
+    border: 1px solid #7c7c7c;
+    border-radius: 7px;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+    transition: all 0.1s ease 0s;
+}
+
+.main input:hover {
+    border-color: #00ccff;
+}
+
+.main input:focus {
+    border-color: #00ccff;
+}
+
+.main button {
+    color: #ffffff80;
+    background-color: #1f98b6;
+    border: none;
+    border: 1px solid #1f98b6;
+    border-radius: 7px;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+    text-align: center;
+    transition: all 0.1s ease 0s;
+}
+
+.main button:hover {
+    border: 1px solid #00ccff;
+    color: #ffffffde;
+    cursor: pointer;
+}
+
+.main button ion-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 135px;
+    margin-top: -6px;
+    background-color: #ff000000;
+}
+
+.main button p {
+    background-color: #ff000000;
+    margin-top: -21px;
+    font-size: 16px;
+}
+
+.main p[id="helpText"] {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.main p[id="warning"] {
+    margin-top: 8px;
+    margin-left: 15px;
+    position: absolute;
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.main p a {
+    text-decoration: none;
+    color: #00ccff;
+}

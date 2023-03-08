@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/debugManager.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/global.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/profile/quickOptions.css">
+    <link rel="stylesheet" type="text/css" href="../style/error.css">
+    <meta name="viewport" content="width=device-width">
+    <script defer src="../js/appFunctions.js"></script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
+</head>
+<body>
+    <title>Home - Instant Messenger</title>
+    <div class="drag">
+        <div class="topbar">
+            <div class="title">
+                <p1>Instant Messenger</p1>
+            </div>
+            <nav>
+                <ul class="top__bar">
+                    <button id="minimiseBtn"><img scr="./svgs/remove-outline.svg"></img></button>
+                    <button id="maximiseBtn"><ion-icon name="resize-outline"></ion-icon></button>
+                    <button id="closeBtn"><ion-icon name="close-outline"></ion-icon></button>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="error_message" id="error_message">
+        <p id="error_message_description"></p>
+    </div>
+    <div class="contacts" id="contactsContainer"></div>
+    <div class="conversations" id="conversationsContainer">
+        <div class="chats" id="chatsContainer"></div>
+        <div class="messageSendBox">
+            <input id="messageSendBoxInput" type="text" placeholder="Say something"><button id="messageSendButton" onclick="sendMessage()"><ion-icon name="send" id="messageSendButtonImage"></ion-icon></button>
+        </div>
+    </div>
+    <div class="userProfile">
+        <div class="userProfileContainer" id="userProfileContainer">
+            <img id="userProfileIcon" src="https://static.123game.dev/instant-messenger/images/defaultProfileIcon.png" draggable="false">
+            <p id="userProfileName">Loading...</p>
+            <p id="userProfileStatus">Online</p>
+        </div>
+        <div class="userProfileQuickOptions" id="userProfileQuickOptions" style="display: none">
+            <div id="userProfileQuickOptions_edit">
+                <ion-icon name="pencil-sharp"></ion-icon><a>Edit Profile</a>
+            </div>
+            <div id="userProfileQuickOptions_logout">
+                <ion-icon name="log-out-outline"></ion-icon><a>Log out</a>
+            </div>
+        </div>
+        <button id="settingsBtn"><ion-icon name="settings-outline"></ion-icon></button>
+    </div>
+    <div class="userProfileEditContainer" id="userProfileEditContainer">
+        <div id="userProfileEditMain">
+            <ion-icon id="userProfileEditContainer_close" name="close-outline"></ion-icon>
+            <img id="userProfileEdit_icon" src="https://static.123game.dev/instant-messenger/images/defaultProfileIcon.png" draggable="false">
+            <p id="userProfileEdit_iconChangeText">Edit Icon</p>
+            <p id="userProfileEdit_username">Loading</p>
+            <p id="userProfileEdit_aboutMeTitle">ABOUT ME</p>
+            <p id="userProfileEdit_aboutMe">Loading...</p>
+        </div>
+    </div>
+    <div class="userProfileEditContainer_URLbar" id="userProfileEditContainer_URLbar">
+        <div class="userProfileEditContainer_URLbar_main" id="userProfileEditContainer_URLbar_main">
+            <p id="userProfileEditContainer_URLbar_main_text">Sorry.  We don't support file uploading yet.</p>
+            <ion-icon id="userProfileEditContainer_URLbar_close" name="close-outline"></ion-icon>
+            <ion-icon id="userProfileEditContainer_URLbar_submit" name="checkmark-outline"></ion-icon>
+            <input id="userProfileEditContainer_URLbar_input" type="text" placeholder="Image URl">
+        </div>
+    </div>
+    <script defer src="../js/connectionManager.js"></script>
+    <script defer src="../js/error.js"></script>
+    <script defer src="../js/profileManager.js"></script>
+    <script defer src="../js/messageManager.js"></script>
+    <script defer src="../js/chatManager.js"></script>
+    <script defer src="../js/contactManager.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

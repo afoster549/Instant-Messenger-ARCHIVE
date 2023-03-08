@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.userProfileQuickOptions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 30px);
+    grid-gap: 5px;
+    grid-auto-rows: 30px;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    padding: 7px;
+    margin-top: -90px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #121214;
+}
+
+.userProfileQuickOptions div {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    background-color: #00000000;
+    color: #ffffff;
+    transition: all 0.1s ease 0s;
+}
+
+.userProfileQuickOptions div a {
+    background-color: #00000000;
+    margin-left: 32px;
+}
+
+.userProfileQuickOptions div ion-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    background-color: #00000000;
+}
+
+/* Items */
+
+.userProfileQuickOptions div[id="userProfileQuickOptions_logout"] {
+    color: #ca3c3e;
+}
+
+.userProfileQuickOptions div[id="userProfileQuickOptions_logout"]:hover {
+    background-color: #ca3c3e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* .userProfileQuickOptions div[id="userProfileQuickOptions_edit"] {
+    margin-top: -5px;
+} */
+
+.userProfileQuickOptions div[id="userProfileQuickOptions_edit"]:hover {
+    background-color: #9c9c9c3a;
+    cursor: pointer;
+}
